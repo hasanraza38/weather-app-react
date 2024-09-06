@@ -11,7 +11,7 @@ function Cards(props) {
   </figure>
   <div className="card-body ">
     <h2 className="card-title text-2xl font-bold">{props.city}</h2>
-    <p className='text-[0.8vw] text-gray-500'>{props.localTime},{props.country}</p>
+    <p className='text-xs text-gray-500'>{props.localTime},{props.country}</p>
     <h1 className='text-black font-semibold text-4xl'>{props.degree}°C</h1>
     <h3 className='text-[1.2rem] font-light'>{props.nature}</h3>
   </div>
