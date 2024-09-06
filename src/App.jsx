@@ -10,7 +10,7 @@ const App = () => {
 async function getData() {
   
   const city = search.current.value
-      await axios(`http://api.weatherapi.com/v1/current.json?key=3fe4c4377a554e6684152455241406&q=${city}&aqi=no`)
+      await axios(`https://api.weatherapi.com/v1/current.json?key=3fe4c4377a554e6684152455241406&q=${city}&aqi=no`)
       .then((res)=>{
         console.log(res.data);
         arr.push(res.data)
