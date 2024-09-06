@@ -3,18 +3,17 @@ import React from 'react'
 function Cards(props) {
   return (
     <>
-<div className="card card-side bg-base-100 shadow-xl">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-      alt="Movie" />
+<div className="card card-side bg-zinc-300 shadow-2xl shadow-zinc-500 w-80 rounded-xl ">
+  <figure className='flex justify-center items-center pl-5'>
+    <img className='w-32'
+      src={props.image}
+      alt="weather" />
   </figure>
-  <div className="card-body">
-    <h2 className="card-title">New movie is released!</h2>
-    <p>Click the button to watch on Jetflix app.</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Watch</button>
-    </div>
+  <div className="card-body ">
+    <h2 className="card-title text-2xl font-bold">{props.city}</h2>
+    <p className='text-[0.8vw] text-gray-500'>{props.localTime},{props.country}</p>
+    <h1 className='text-black font-semibold text-4xl'>{props.degree}°C</h1>
+    <h3 className='text-[1.2rem] font-light'>{props.nature}</h3>
   </div>
 </div>
     </>
